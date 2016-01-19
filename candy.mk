@@ -1,16 +1,12 @@
 $(call inherit-product, device/htc/himawhl/full_himawhl.mk)
 
-# Inherit some common crdroid stuff.
-$(call inherit-product, vendor/crdroid/config/common_full_phone.mk)
+# Inherit some common Candy5 stuff.
+$(call inherit-product, vendor/candy/config/common_full_phone.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/crdroid/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/candy/config/nfc_enhanced.mk)
 
-PRODUCT_NAME := crdroid_himawhl
-BOARD_VENDOR := htc
-TARGET_VENDOR := htc
-PRODUCT_DEVICE := himawhl
-
+PRODUCT_NAME := candy_himawhl
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE="htc_himawhlspr" \
